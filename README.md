@@ -52,7 +52,7 @@ http_response_count{code="200",handler="/ping",method="get"} 2
 * Прежде всего нужно залогиниться под своим аккаунтом и форкнуть себе репозиторий. В нём лежат исходники и terraform-инкструкция для разворачивания MVP 
 
 
-* Написать Dockerfile. Приложение написано на go и собирается стандартным тулчейном:
+* Написать Dockerfile. Приложение написано на go и собирается стандартным тулчейном: ✅
     ```
     $ go mod download
     $ CGO_ENABLED=0 go build -o path/to/resulting/binary
@@ -67,7 +67,7 @@ http_response_count{code="200",handler="/ping",method="get"} 2
     https://github.com/GoogleContainerTools/distroless
 
 
-* Опубликовать получившийся image в Yandex Container Registry (docker push)
+* Опубликовать получившийся image в Yandex Container Registry (docker push) ✅
 
     https://cloud.yandex.ru/docs/container-registry/
 
