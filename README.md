@@ -1,5 +1,6 @@
 # DevOps-тренировки в Яндексе
 Домашнее задание для DevOps-тренировок в Яндексе, лекция "Облако. Кто виноват и что делать."
+Добавлю решения как только закончу
 
 https://yandex.ru/yaintern/training/devops-training
 
@@ -77,13 +78,13 @@ http_response_count{code="200",handler="/ping",method="get"} 2
     https://docs.github.com/en/actions/publishing-packages/publishing-docker-images
 
 
-* С помощью Terraform развернуть стенд с приложением:
+* С помощью Terraform развернуть стенд с приложением: ✅
     - сетевой балансировщик
     - две виртуальных машины под ним
 
 На каждой виртуальной машине должен быть запущен:
-1) Контейнер с приложением. Тот самый контейнер, который собирался выше.
-2) Unified-Agent. Unified-агент нужно будет настроить на получение метрик от приложения.
+1) Контейнер с приложением. Тот самый контейнер, который собирался выше. ✅
+2) Unified-Agent. Unified-агент нужно будет настроить на получение метрик от приложения. ❓
 
     https://cloud.yandex.ru/docs/monitoring/concepts/data-collection/unified-agent/configuration#metrics_pull_input
 
@@ -98,7 +99,7 @@ http_response_count{code="200",handler="/ping",method="get"} 2
 https://cloud.yandex.ru/marketplace/products/yc/container-optimized-image
 
 ## После того, как стенд готов
-* Построить в Yandex Monitoring графики, на которых для сервиса в целом можно будет посмотреть следующее:
+* Построить в Yandex Monitoring графики, на которых для сервиса в целом можно будет посмотреть следующее: 
     * Разбивку по типам нарисованных котивов (дневных и ночных)
     * Разбивку по кодам ответов, хендлерам и методам
 https://cloud.yandex.ru/docs/monitoring/quickstart
@@ -107,7 +108,7 @@ https://cloud.yandex.ru/docs/monitoring/quickstart
 * Задача со звёздочкой: дополнительно инструментировать приложение и доработать дашборд для того, чтобы получить графики времён обработки запросов в разрезе handler и method
 
 
-* Выключить одну из виртуальных машин. Убедиться, что сервис продолжает жить и обслуживать запросы.
+* Выключить одну из виртуальных машин. Убедиться, что сервис продолжает жить и обслуживать запросы. ✅
 
 
 >[!WARNING]
