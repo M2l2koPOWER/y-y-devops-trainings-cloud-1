@@ -84,7 +84,7 @@ http_response_count{code="200",handler="/ping",method="get"} 2
 
 На каждой виртуальной машине должен быть запущен:
 1) Контейнер с приложением. Тот самый контейнер, который собирался выше. ✅
-2) Unified-Agent. Unified-агент нужно будет настроить на получение метрик от приложения. ❓
+2) Unified-Agent. Unified-агент нужно будет настроить на получение метрик от приложения. ✅
 
     https://cloud.yandex.ru/docs/monitoring/concepts/data-collection/unified-agent/configuration#metrics_pull_input
 
